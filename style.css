@@ -108,7 +108,7 @@ ol[class] {
   font-family: var(--font-Chicle);
   font-style: normal;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.25rem;
   line-height: 24px;
 }
 .header .navbar ul li a:hover {
@@ -124,7 +124,7 @@ ol[class] {
   padding: 5px 20px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-family: var(--font-Chicle);
 }
 .header .navbar ul li a.btn--signin:hover {
