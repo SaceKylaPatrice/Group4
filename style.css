@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Creepster:regular);
+@import url(https://fonts.googleapis.com/css?family=Chicle:regular);
+@font-face {
+  font-family: GloomyFont;
+  src: url(./Font/Gloomy-Things.ttf);
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-Creepster);
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* Utilities */
+ul[class],
+ol[class] {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flow-content > * + * {
+  margin-top: var(--flow-spacer, var(--spacer));
+}
+:root {
+  --light-red: #75292e;
+  --red: #e00a0b;
+  --white: #ffffff;
+  --blackish: #181818;
+  --black: #000000;
+  --grey: #7b8381;
+
+  --font-Gloom: GloomyFont;
+  --font-Poppins: Poppins;
+  --font-Creepster: Creepster;
+  --font-Chicle: Chicle;
+}
+
+.header {
+  background-color: var(--blackish);
+  color: var(--white);
+  font-family: var(--font-Gloom);
+  font-size: 1.5em;
+  padding: 0.5em;
+  text-align: center;
+  height: 100vh;
+  max-width: 100%;
+}
+.header .logo {
+  font-size: 4rem;
+  font-family: var(--font-Creepster);
+  color: var(--white);
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 75px;
+  /* padding: 0 1em; */
+  padding: 10px 0px 10px;
+}
+.header .logo span {
+  color: var(--red);
+  font-family: var(--font-Creepster);
+}
+.header .navbar {
+  width: 100%;
+  height: 140px;
+  background-color: transparent;
+}
+.header .navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .navbar ul li {
+  padding: 0 1em;
+  margin: 30px 48px;
+}
+.header .navbar ul li a {
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--font-Chicle);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+.header .navbar ul li a:hover {
+  color: var(--red);
+}
+.header .navbar ul li a.active {
+  color: var(--red);
+}
+.header .navbar ul li a.btn--signin {
+  background-color: transparent;
+  border: 1px solid var(--red);
+  color: var(--white);
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: var(--font-Creepster);
+}
+
+figure {
+  position: absolute;
+}
+.bat1 {
+  left: 3.82%;
+  right: 90.11%;
+  top: 25.11%;
+  bottom: 92.44%;
+}
+.bat2 {
+  left: 88.02%;
+  right: 5.87%;
+  top: 25.11%;
+  bottom: 92.41%;
+  transform: matrix(0.97, 0.28, -0.24, 0.96, 0, 0);
+}
+
+.text__box {
+  margin-top: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text__box .main__title {
+  height: 100px;
+  text-shadow: 0px 0px 25px #e00a0b, 0px 0px 25px #e00a0b, 0px 0px 25px #e00a0b;
+  color: var(--white);
+  text-align: center;
+  padding: 0 1em;
+  line-height: 1.2;
+  margin-bottom: 8rem;
+  font-family: var(--font-Creepster);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 117px;
+}
+.text__box .paragraph {
+  font-family: var(--font-Chicle);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  width: 1096px;
+  height: 120px;
+}
+.text__box .btn--explore {
+  background-color: var(--red);
+  border: 1px solid var(--white);
+  color: var(--white);
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: var(--font-Chicle);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
