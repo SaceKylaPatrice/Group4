@@ -77,8 +77,6 @@ ol[class] {
   font-family: var(--font-Creepster);
   color: var(--white);
   text-align: center;
-  font-style: normal;
-  font-weight: 400;
   line-height: 75px;
   /* padding: 0 1em; */
   padding: 10px 0px 10px;
@@ -106,8 +104,6 @@ ol[class] {
   text-decoration: none;
   text-transform: uppercase;
   font-family: var(--font-Chicle);
-  font-style: normal;
-  font-weight: 400;
   font-size: 1.25rem;
   line-height: 24px;
 }
@@ -152,7 +148,7 @@ figure {
 }
 
 .text__box {
-  margin-top: 40px;
+  margin-top: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -168,16 +164,12 @@ figure {
   line-height: 1.2;
   margin-bottom: 4rem;
   font-family: var(--font-Creepster);
-  font-style: normal;
-  font-weight: 400;
   font-size: 100px;
   line-height: 117px;
 }
 
 .text__box .paragraph {
   font-family: var(--font-Chicle);
-  font-style: normal;
-  font-weight: 400;
   font-size: 1.25rem;
   line-height: 29px;
   text-align: center;
@@ -193,8 +185,6 @@ figure {
   border-radius: 5px;
   text-decoration: none;
   font-family: var(--font-Chicle);
-  font-style: normal;
-  font-weight: 400;
   font-size: 1.5rem;
 }
 .text__box .btn--explore:hover {
