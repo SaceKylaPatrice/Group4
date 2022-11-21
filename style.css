@@ -178,11 +178,12 @@ figure {
   font-family: var(--font-Chicle);
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.125rem;
   line-height: 29px;
   text-align: center;
   width: 1096px;
   height: 120px;
+  margin-top: 10px;
 }
 .text__box .btn--explore {
   background-color: var(--red);
