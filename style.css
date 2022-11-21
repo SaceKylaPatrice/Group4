@@ -6,6 +6,12 @@
   src: url(./Font/Gloomy-Things.ttf);
 }
 
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 /* Reset */
 *,
 *::before,
@@ -102,7 +108,7 @@ ol[class] {
   font-family: var(--font-Chicle);
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 24px;
 }
 .header .navbar ul li a:hover {
@@ -118,12 +124,18 @@ ol[class] {
   padding: 5px 20px;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 1.5em;
-  font-family: var(--font-Creepster);
+  font-size: 2rem;
+  font-family: var(--font-Chicle);
+}
+.header .navbar ul li a.btn--signin:hover {
+  background-color: var(--white);
+  color: var(--red);
+  border: 1px solid var(--red);
 }
 
 figure {
   position: absolute;
+  animation: blinker 2s linear infinite;
 }
 .bat1 {
   left: 3.82%;
@@ -161,6 +173,7 @@ figure {
   font-size: 100px;
   line-height: 117px;
 }
+
 .text__box .paragraph {
   font-family: var(--font-Chicle);
   font-style: normal;
@@ -182,4 +195,9 @@ figure {
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
+}
+.text__box .btn--explore:hover {
+  background-color: var(--white);
+  color: var(--red);
+  border: 1px solid var(--red);
 }
