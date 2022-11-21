@@ -97,7 +97,7 @@ ol[class] {
 }
 .header .navbar ul li {
   padding: 0 1em;
-  margin: 10px 40px;
+  margin: 10px 30px;
 }
 .header .navbar ul li a {
   color: var(--white);
