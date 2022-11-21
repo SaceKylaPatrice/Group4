@@ -183,7 +183,7 @@ figure {
   text-align: center;
   width: 1096px;
   height: 120px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .text__box .btn--explore {
   background-color: var(--red);
