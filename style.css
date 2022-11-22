@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Creepster:regular);
 @import url(https://fonts.googleapis.com/css?family=Chicle:regular);
+
 @font-face {
   font-family: GloomyFont;
   src: url(./Font/Gloomy-Things.ttf);
@@ -12,7 +13,6 @@
   }
 }
 
-/* Reset */
 *,
 *::before,
 *::after {
@@ -28,16 +28,11 @@ html {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-p,
 figure {
   margin: 0;
   padding: 0;
 }
 
-/* Utilities */
 ul[class],
 ol[class] {
   padding: 0;
@@ -45,9 +40,10 @@ ol[class] {
   list-style: none;
 }
 
-.flow-content > * + * {
+.flow-content>*+* {
   margin-top: var(--flow-spacer, var(--spacer));
 }
+
 :root {
   --light-red: #75292e;
   --red: #e00a0b;
@@ -69,36 +65,41 @@ ol[class] {
   font-size: 1.5em;
   padding: 0.5em;
   text-align: center;
-  height: 100vh;
-  max-width: 100%;
+  height: 750px;
+  width: 1440px;
 }
+
 .header .logo {
   font-size: 4rem;
   font-family: var(--font-Creepster);
   color: var(--white);
   text-align: center;
   line-height: 75px;
-  /* padding: 0 1em; */
   padding: 10px 0px 10px;
 }
+
 .header .logo span {
   color: var(--red);
   font-family: var(--font-Creepster);
 }
+
 .header .navbar {
   width: 100%;
   height: 140px;
   background-color: transparent;
 }
+
 .header .navbar ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .header .navbar ul li {
   padding: 0 1em;
   margin: 10px 30px;
 }
+
 .header .navbar ul li a {
   color: var(--white);
   text-decoration: none;
@@ -107,12 +108,15 @@ ol[class] {
   font-size: 1.25rem;
   line-height: 24px;
 }
+
 .header .navbar ul li a:hover {
   color: var(--red);
 }
+
 .header .navbar ul li a.active {
   color: var(--red);
 }
+
 .header .navbar ul li a.btn--signin {
   background-color: transparent;
   border: 1px solid var(--red);
@@ -122,7 +126,9 @@ ol[class] {
   text-decoration: none;
   font-size: 1.25rem;
   font-family: var(--font-Chicle);
+
 }
+
 .header .navbar ul li a.btn--signin:hover {
   background-color: var(--white);
   color: var(--red);
@@ -133,12 +139,14 @@ figure {
   position: absolute;
   animation: blinker 2s linear infinite;
 }
+
 .bat1 {
   left: 3.82%;
   right: 90.11%;
   top: 25.11%;
   bottom: 92.44%;
 }
+
 .bat2 {
   left: 88.02%;
   right: 5.87%;
@@ -155,6 +163,7 @@ figure {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .text__box .main__title {
   height: 100px;
   text-shadow: 0px 0px 25px #e00a0b, 0px 0px 25px #e00a0b, 0px 0px 25px #e00a0b;
@@ -170,13 +179,14 @@ figure {
 
 .text__box .paragraph {
   font-family: var(--font-Chicle);
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   line-height: 29px;
   text-align: center;
   width: 870px;
   height: 120px;
   margin-top: 30px;
 }
+
 .text__box .btn--explore {
   background-color: var(--red);
   border: 1px solid var(--white);
@@ -187,8 +197,131 @@ figure {
   font-family: var(--font-Chicle);
   font-size: 1.5rem;
 }
+
 .text__box .btn--explore:hover {
   background-color: var(--white);
   color: var(--red);
   border: 1px solid var(--red);
 }
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+
+.aespa-container {
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--blackish);
+  padding-bottom: 40px;
+}
+
+.aespa-img {
+  margin: 0 auto;
+  background: url(allkpop_1660184345_20220630-aespa.jpg);
+  border: 2px solid #75292E;
+  filter: drop-shadow(0px 0px 25px #75292E) drop-shadow(0px 0px 25px #75292E) drop-shadow(0px 0px 25px #75292E);
+}
+
+.main-container {
+  background-color: var(--black);
+  width: 100%;
+  height: 1130px;
+
+}
+
+.main-header {
+  font-family: 'Creepster';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 94px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding: 40px 0 0 0;
+  color: #FFFFFF;
+
+
+  text-shadow: 0px 0px 25px #E00A0B, 0px 0px 25px #E00A0B, 0px 0px 25px #E00A0B;
+}
+
+.main-paragraph {
+  font-family: 'Chicle';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #FFFAFB;
+  width: 1096px;
+  height: 99px;
+  margin: 40px auto;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+ 
+}
+.grid-item{
+  margin: 0 auto;
+}
+.card{
+  background-color: var(--blackish);
+  width: 315px;
+  height: 749px;
+  
+
+  background: #181818;
+  border: 2px solid #75292E;
+  border-radius: 5px;
+  filter: drop-shadow(0px 0px 25px #75292E);
+}
+
+.card-item__img{
+  margin: 15px;
+  object-fit: cover;
+  width: 280px;
+  height: 584px;
+  display: block; 
+}
+
+
+.card-body{
+  width: 270px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.artist-name{
+  font-family: 'Creepster';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.305em;
+  color: #FFFAFB;
+  
+  margin-top: 30px;
+}
+
+.artist-name__first{
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.band-role{
+  font-family: 'Chicle';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;  
+  color: #F55D3A;
+  margin-top: 10px;
+}
+
