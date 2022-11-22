@@ -40,7 +40,7 @@ ol[class] {
   list-style: none;
 }
 
-.flow-content>*+* {
+.flow-content > * + * {
   margin-top: var(--flow-spacer, var(--spacer));
 }
 
@@ -124,7 +124,6 @@ ol[class] {
   text-decoration: none;
   font-size: 1.25rem;
   font-family: var(--font-Chicle);
-
 }
 
 .header .navbar ul li a.btn--signin:hover {
@@ -136,6 +135,7 @@ ol[class] {
 figure {
   position: absolute;
   animation: blinker 2s linear infinite;
+  background: #404040;
 }
 
 .bat1 {
@@ -154,12 +154,11 @@ figure {
 }
 
 .text__box {
-  position: absolute;
-  margin-top: 50px;
-  position: absolute;
-  top: 50%;
+  margin-top: 100px;
+  /* position: absolute; */
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   text-align: center;
 }
 
@@ -177,12 +176,13 @@ figure {
 
 .text__box .paragraph {
   font-family: var(--font-Chicle);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 29px;
+  letter-spacing: 0.1em;
   text-align: center;
-  width: 870px;
-  /* height: 120px; */
-  /* margin-top: 30px; */
+  /* width: 100%; */
+  /* width: 1096px; */
+  padding: 0 150px;
   margin-bottom: 30px;
 }
 
@@ -208,7 +208,6 @@ figure {
   margin: 0 auto;
 }
 
-
 .aespa-container {
   margin: 0 auto;
   text-align: center;
@@ -219,19 +218,19 @@ figure {
 .aespa-img {
   margin: 0 auto;
   background: url(allkpop_1660184345_20220630-aespa.jpg);
-  border: 2px solid #75292E;
-  filter: drop-shadow(0px 0px 25px #75292E) drop-shadow(0px 0px 25px #75292E) drop-shadow(0px 0px 25px #75292E);
+  border: 2px solid #75292e;
+  filter: drop-shadow(0px 0px 25px #75292e) drop-shadow(0px 0px 25px #75292e)
+    drop-shadow(0px 0px 25px #75292e);
 }
 
 .main-container {
   background-color: var(--black);
   width: 100%;
   height: 1130px;
-
 }
 
 .main-header {
-  font-family: 'Creepster';
+  font-family: "Creepster";
   font-style: normal;
   font-weight: 400;
   font-size: 80px;
@@ -239,88 +238,82 @@ figure {
   text-align: center;
   letter-spacing: 0.1em;
   padding: 40px 0 0 0;
-  color: #FFFFFF;
+  color: #ffffff;
 
-
-  text-shadow: 0px 0px 25px #E00A0B, 0px 0px 25px #E00A0B, 0px 0px 25px #E00A0B;
+  text-shadow: 0px 0px 25px #e00a0b, 0px 0px 25px #e00a0b, 0px 0px 25px #e00a0b;
 }
 
 .main-paragraph {
-  font-family: 'Chicle';
+  font-family: "Chicle";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
   letter-spacing: 0.1em;
-
-  color: #FFFAFB;
+  color: #fffafb;
   width: 1096px;
   height: 99px;
   margin: 40px auto;
 }
 
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
- 
 }
-.grid-item{
+.grid-item {
   margin: 0 auto;
 }
-.card{
+.card {
   background-color: var(--blackish);
   width: 315px;
   height: 749px;
-  
 
   background: #181818;
-  border: 2px solid #75292E;
+  border: 2px solid #75292e;
   border-radius: 5px;
-  filter: drop-shadow(0px 0px 25px #75292E);
+  filter: drop-shadow(0px 0px 25px #75292e);
 }
 
-.card-item__img{
+.card-item__img {
   margin: 15px;
   object-fit: cover;
   width: 280px;
   height: 584px;
-  display: block; 
+  display: block;
 }
 
-
-.card-body{
+.card-body {
   width: 270px;
   margin: 0 auto;
   text-align: center;
 }
 
-.artist-name{
-  font-family: 'Creepster';
+.artist-name {
+  font-family: "Creepster";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.305em;
-  color: #FFFAFB;
-  
+  color: #fffafb;
+
   margin-top: 30px;
 }
 
-.artist-name__first{
+.artist-name__first {
   margin-top: 30px;
   margin-bottom: 25px;
 }
 
-.band-role{
-  font-family: 'Chicle';
+.band-role {
+  font-family: "Chicle";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  letter-spacing: 0.1em;  
-  color: #F55D3A;
+  letter-spacing: 0.1em;
+  color: #f55d3a;
   margin-top: 10px;
 }
-
